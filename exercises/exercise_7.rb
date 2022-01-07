@@ -13,5 +13,5 @@ puts "----------"
 puts "please give me a store name:"
 @store_name = gets.chomp
 
-Store.create(name: @store_name)
-puts @store_name.errors.full_messages
+@my_store = Store.create(name: @store_name)
+puts @my_store.errors.full_messages
